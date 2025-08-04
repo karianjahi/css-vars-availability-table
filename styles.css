@@ -116,3 +116,11 @@ body {
     text-align: center;
     margin-left: 20%;
 }
+
+table > thead > tr > th {
+    font-size: 150%;
+}
+
+.time {
+    font-size: 150%;
+}
