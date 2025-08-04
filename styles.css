@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color0: #f4f8f5;
+    --color1: #74bd8c;
+    --color2: #36834f;
+    --color3: #16552b;
+    --color4: #09411c;
+    --color5: #043317;
+    --color6: #dd0808;
+    /* 1d010f */
+    --solid-border: solid;
+    --dashed-border: dashed;
+    --table-border-color: #000505;
+}
+
+.available-0 {
+    background-color: var(--color0);
+}
+.available-1 {
+    background-color: var(--color1);
+}
+.available-2 {
+    background-color: var(--color2);
+}
+.available-3 {
+    background-color: var(--color3);
+}
+.available-4 {
+    background-color: var(--color4);
+}
+.available-5 {
+    background-color: var(--color5);
+}
+
+.sharp td {
+    border-bottom: var(--solid-border);
+}
+
+.half  td {
+    border-bottom:var(--dashed-border);
+}
+
+
+.half {
+    height: 3vh;
+    width: 10vw;
+}
+.sharp {
+    height: 3vh;
+}
+
+#legend {
+    margin: 15% 30%;
+}
+
+#legend-gradient {
+    background-image: linear-gradient(to right,
+                                var(--color0) 0% 17%,
+                                var(--color1) 17% 33%,
+                                var(--color2) 33% 50%,
+                                var(--color3) 50% 66%,
+                                var(--color4) 66% 83%,
+                                var(--color5) 83% 100%);                                var(--color5) 101%);
+    width: 50%;
+    height: 3vw;
+    border: 2px solid black;
+    
+}
+
+#legend-gradient::before {
+    position: relative;
+    content: "0";
+    right: 10%;
+}
+
+#legend-gradient::after {
+    position: relative;
+    content: "5+";
+    left: 100%;
+}
+
+#legend > span {
+    margin-left: 12%;
+}
+
