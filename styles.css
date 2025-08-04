@@ -70,7 +70,7 @@ body {
 } */
 
 #legend {
-    margin: 5% 10%;
+    margin: 2% 10%;
 }
 
 #legend-gradient {
@@ -91,30 +91,29 @@ body {
 #legend-gradient::before {
     position: relative;
     content: "0";
-    right: 8%;
-    top: 30%;
+    right: 5%;
+    top: 10%;
+    font-size: 150%;
 }
 
 #legend-gradient::after {
     position: relative;
     content: "5+";
     left: 100%;
-    top: 30%;
+    top: 10%;
+    font-size: 150%;
 }
 
 #legend>span {
-    margin-left: 12%;
-}
-
-#avail-table {
-    margin-left: 5%;
-}
-
-#legend span {
     font-size: 180%;
     font-weight: bolder;
     text-align: center;
     margin-left: 20%;
+
+}
+
+#avail-table {
+    margin-left: 5%;
 }
 
 table > thead > tr > th {
